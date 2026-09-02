@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://api.fontshare.com/v2/css?f[]=general-sans@900,600,400&display=swap" rel="stylesheet">
+    <title>hello</title>
+    <style>
+        * {box-sizing: border-box;}
+        html {scroll-behavior: smooth;}
+        body {
+            background-color: #1f1f1f; 
+            color: #ffffff; 
+            padding: 0; 
+            margin: 0;
+            font-family: 'General Sans', sans-serif;
+        }
+        .container {
+            padding: 20px;
+        }
+        #head-bar {
+            margin: 0 0 20px; 
+            font-size: 1.2rem; 
+            line-height: 1.0;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            font-weight: 900;
+        }
+        #head-bar p {
+            margin: 0;
+        }
+        #head-bar p span {
+            color: #4ab2ff;
+        }
+        .logo {
+            display: inline-block;
+            height: 1.6em;
+            width: 1.6em;
+        }
+        #words {
+            background-color: #111;
+        }
+        #settings {
+            padding: 20px; 
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav id="head-bar">
+            <img class="logo" src="res/dark.svg">
+            <p class="logo-text"><span>Lightning</span>Dict</p>
+        </nav>
+        <div class="content">
+            <section id="settings">
+                <input type="text" name="translate-text" id="translate-text">
+                <p></p>
+            </section>
+            <aside id="words">
+                <div id="placeholder"></div>
+            </aside>
+        </div>
+    </div>
+</body>
+</html>

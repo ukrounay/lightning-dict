@@ -1,0 +1,29 @@
+{
+    "manifest_version": 3,
+    "name": "LightningDict",
+    "version": "0.2",
+    "description": "[розробка] Миттєвий переклад і збереження виділених слів, швидкий доступ до словника з будь-якого сайту.",
+    "icons": {
+        "128": "res/128.png",
+        "534": "res/534.png"
+    },
+    "action": {
+        "default_icon": "res/534.png",
+        "default_popup": "popup.html"
+    },
+
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["app.js"]
+        }
+    ],
+    "permissions": [
+        "activeTab",
+        "contextMenus",
+        "storage"
+    ],
+    "host_permissions": [
+        "https://gemini.nedolyaruslan.workers.dev/*"
+    ]
+}
