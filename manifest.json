@@ -1,7 +1,9 @@
 {
     "manifest_version": 3,
     "name": "LightningDict",
-    "version": "0.2",
+    "version": "0.3",
+
+    "author": "ukrounay",
     "description": "[розробка] Миттєвий переклад і збереження виділених слів, швидкий доступ до словника з будь-якого сайту.",
     "icons": {
         "128": "res/128.png",
